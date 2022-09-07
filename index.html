@@ -17,6 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <!--font google pour les titres-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,17 +45,20 @@
           <a href="#" class="logo">Journal du lundi</a>
           <ul>
             <li><a href="#">Devenir membre</a></li>
-            <li><a href="#" class="text-primary">Connexion</a></li>
+            <li>
+              <a href="#" class="text-primary">Connexion</a>
+            </li>
             <li><a href="#" class="btn btn-light">Inscription</a></li>
           </ul>
         </nav>
       </header>
       <nav class="navigation_theme">
-        <a href="#">TECH</a>
-        <a href="#">MODE</a>
-        <a href="#">POLITIQUE</a>
-        <a href="#">SOCIAL</a><a href="#">BOUTIQUE</a>
-        <a href="#">BLOG</a>
+        <a class="anime_menu" href="#">TECH</a>
+        <a class="anime_menu" href="#">MODE</a>
+        <a class="anime_menu" href="#">POLITIQUE</a>
+        <a class="anime_menu" href="#">SOCIAL</a>
+        <a class="anime_menu" href="#">BOUTIQUE</a>
+        <a class="anime_menu" href="#">BLOG</a>
       </nav>
       <main>
         <section class="case_show">
@@ -67,16 +76,18 @@
             <p class="author">Lorem, ipsum dolor.</p>
             <p class="date_article">
               Oct 23 -16 min read
-              <i class="fas fa-star"></i>
+              <i class="fas fa-star mx"></i>
             </p>
           </article>
           <article class="grid-article">
             <img src="./images/bloc-2.jpeg" alt="photo bloc-2" />
             <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p class="content-article">
+              Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
+            </p>
             <p class="author">Lorem, ipsum dolor.</p>
             <p class="date_article">
-              Oct 01 - 25 min read <i class="fas fa-star"></i>
+              Oct 01 - 25 min read <i class="fas fa-star mx"></i>
             </p>
           </article>
           <article class="grid-article">
@@ -85,11 +96,11 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Corrupti, nulla.
             </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
             <p class="author">Lorem, ipsum dolor</p>
             <p class="date_article">
               Oct 23 - 03 min read
-              <i class="fas fa-star"></i>
+              <i class="fas fa-star mx"></i>
             </p>
           </article>
           <article class="grid-article">
@@ -98,10 +109,10 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Corrupti, nulla.
             </h2>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> -->
+
             <p class="author">Lorem, ipsum dolor.</p>
             <p class="date_article">
-              Oct 23 -16 min read<i class="fas fa-star"></i>
+              Oct 23 - 16 min read<i class="fas fa-star mx"></i>
             </p>
           </article>
           <article>
@@ -117,9 +128,148 @@
             </p>
             <p class="author">Lorem, ipsum dolor.</p>
             <p class="date_article">
-              Oct 11 -16 min read <i class="fas fa-star"></i>
+              Oct 11 - 16 min read <i class="fas fa-star mx"></i>
             </p>
           </article>
+        </section>
+        <hr class="barre-color" />
+        <section class="pub">
+          <img src="./images/ads.png" alt="photo pub" />
+          <h1>Lorem ipsum dolor sit amet consectetur</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <form action="#" method="get">
+            <input type="text" name="" id="" placeholder="Adresse email" />
+            <button type="submit" class="btn btn-dark">Inscription</button>
+          </form>
+        </section>
+
+        <section class="box-content">
+          <div class="articles">
+            <h2 class="underline title_tech">Technologie</h2>
+            <article class="article-1 tech">
+              <img src="./images/bloc-7.jpeg" alt="photo bloc-7" />
+              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Laboriosam assumenda fugiat minima. Explicabo laboriosam neque
+              </p>
+              <p class="author">Lorem, ipsum dolor.</p>
+              <p class="date_article">
+                Oct 11 - 16 min read.<i class="fas fa-star mx"></i>
+              </p>
+            </article>
+            <article class="article-2 tech">
+              <img src="./images/bloc-10.jpeg" alt="photobloc-10" />
+              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident sint vero esse vel similique! Odit illo dicta rem
+                rerum, natus inventore dolor numquam. Quae totam, doloremque
+                provident harum possimus quidem.
+              </p>
+              <p class="author">Lorem, ipsum dolor.</p>
+              <p class="date_article">
+                Oct 11 - 10 min read<i class="fas fa-star mx"></i>
+              </p>
+            </article>
+            <article class="article-3 tech">
+              <img src="./images/bloc-8.jpeg" alt="photo bloc-8" />
+              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium atque dolore, aliquam quo officiis nemo, maiores
+                excepturi, ex assumenda in voluptates at exercitationem. Porro
+                necessitatibus fugit numquam, esse labore nobis.
+              </p>
+              <p class="author">Lorem, ipsum dolor.</p>
+              <p class="date_article">
+                Oct 15 - 16 min read<i class="fas fa-star mx"></i>
+              </p>
+            </article>
+            <h2 class="underline title_mode">Mode</h2>
+            <article class="mode-1 tech">
+              <img src="./images/bloc-3.jpeg" alt="" />
+              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                quia fuga, illum in odio ipsum aspernatur delectus quasi
+                laboriosam vel ipsam repellendus vero natus debitis maxime
+                explicabo libero! Porro, quia?
+              </p>
+              <p class="author">Lorem, ipsum dolor.</p>
+              <p class="date_article">
+                Oct 6 - 16 min read<i class="fas fa-star mx"></i>
+              </p>
+            </article>
+            <article class="mode-2 tech">
+              <img src="./images/bloc-11.jpeg" alt="photo bloc-11" />
+              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                illum, laborum optio possimus minima nemo laboriosam. Aspernatur
+                animi minima labore doloribus, itaque modi eaque laudantium
+                excepturi libero cumque molestiae sapiente.
+              </p>
+              <p class="author">Lorem, ipsum dolor.</p>
+              <p class="date_article">
+                Lorem, ipsum.<i class="fas fa-star mx"></i>
+              </p>
+            </article>
+            <article class="mode-3 tech">
+              <img src="./images/bloc-9.jpeg" alt="photo bloc-9" />
+              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                illum, laborum optio possimus minima nemo laboriosam. Aspernatur
+                animi minima labore doloribus, itaque modi eaque laudantium
+                excepturi libero cumque molestiae sapiente.
+              </p>
+              <p class="author">Lorem, ipsum dolor.</p>
+              <p class="date_article">
+                Oct 11 - 16 min read<i class="fas fa-star mx"></i>
+              </p>
+            </article>
+            <!-------------------------article sans image---------------------------------->
+            <h2 class="underline title_populaire">Populaire en ce momment</h2>
+            <div class="small-content">
+              <article class="small-article" data-number="01">
+                <div>
+                  <h2>Lorem, ipsum dolor.</h2>
+                  <p class="author">Lorem, ipsum.</p>
+                  <p class="date_article">
+                    Oct 11 - 16 min read<i class="fas fa-star mx"></i>
+                  </p>
+                </div>
+              </article>
+              <article class="small-article" data-number="02">
+                <div>
+                  <h2>Lorem, ipsum dolor.</h2>
+                  <p class="author">Lorem, ipsum.</p>
+                  <p class="date_article">
+                    Oct 11 - 16 min read<i class="fas fa-star mx"></i>
+                  </p>
+                </div>
+              </article>
+              <article class="small-article" data-number="03">
+                <div>
+                  <h2>Lorem, ipsum dolor.</h2>
+                  <p class="author">Lorem, ipsum.</p>
+                  <p class="date_article">
+                    Oct 11 - 16 min read<i class="fas fa-star mx"></i>
+                  </p>
+                </div>
+              </article>
+              <article class="small-article" data-number="04">
+                <div>
+                  <h2>Lorem, ipsum dolor.</h2>
+                  <p class="author">Lorem, ipsum.</p>
+                  <p class="date_article">
+                    Oct 11 - 16 min read<i class="fas fa-star mx"></i>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
         </section>
       </main>
       <footer></footer>
