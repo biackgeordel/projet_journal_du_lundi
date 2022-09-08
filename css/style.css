@@ -220,9 +220,7 @@ form {
   display: grid;
   padding: 2rem 0;
   grid-template-columns: 1fr 1fr 1fr;
-  /* grid-template-rows: repeat(3, auto); */
   grid-auto-rows: auto;
-
   justify-content: space-between;
   align-content: center;
   gap: 1rem 4rem;
