@@ -233,3 +233,6 @@ p {
 .case_show > article:nth-child(5) {
   display: none;
 }
+.small-content {
+  display: none;
+}

@@ -189,7 +189,7 @@ form {
   display: grid;
   grid-template-columns: 1fr auto;
   place-items: center start;
-  margin: 1rem auto 5rem;
+  margin: 0.5rem auto;
 }
 .nav_header ul {
   display: flex;
@@ -332,7 +332,7 @@ form {
   column-gap: 2rem;
   grid-template-rows: auto auto auto auto auto auto auto auto;
   grid-template-areas:
-    "tech tech tech pop"
+    "tech tech tech small"
     "a1 a1 a1 small"
     "a2 a2 a2 small"
     "a3 a3 a3 small"
@@ -365,14 +365,12 @@ form {
 .mode-3 {
   grid-area: m3;
 }
-.title_populaire {
-  grid-area: pop;
-  text-align: center;
-  position: sticky;
-  top: 50px;
-}
+
 .small-content {
   grid-area: small;
   position: sticky;
   top: 100px;
+}
+.small-content > h2 {
+  font-size: 2.4rem;
 }
