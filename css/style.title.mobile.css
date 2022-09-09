@@ -1,0 +1,30 @@
+.navigation_theme {
+  flex-direction: column;
+  padding: 0;
+}
+.anime_menu {
+  display: none;
+}
+.navigation_theme::before {
+  content: "\009F\009F\009F";
+  display: block;
+  font-size: 2.4rem;
+  align-self: flex-end;
+  margin: 0.5rem 1rem;
+  text-align: center;
+  font-weight: 700;
+  transform: rotate(-90deg);
+  transition: transform 1s ease-in-out;
+  transform-origin: center center;
+  min-width: 4rem;
+  min-height: 4rem;
+  padding: 1rem;
+  color: var(--gray-hint);
+}
+.navigation_theme:hover .anime_menu {
+  display: block;
+  padding: 0.5rem 0;
+}
+.navigation_theme:hover::before {
+  transform: rotate(90deg);
+}

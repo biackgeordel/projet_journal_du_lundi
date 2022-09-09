@@ -113,7 +113,7 @@ p,
 }
 .pub form {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .pub form input {
   min-width: 50%;
