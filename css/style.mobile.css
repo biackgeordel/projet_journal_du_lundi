@@ -204,9 +204,10 @@ form {
 }
 .case_show article h2,
 p,
-.grid-article {
+.grid-article,
+.articles {
   padding-left: 1rem;
-  padding-right: 0.5rem;
+  padding-right: 1rem;
 }
 .case_show > article:nth-child(1) {
   grid-column: 1/4;
@@ -233,16 +234,14 @@ p,
 .small-content {
   display: none;
 }
+
 .grid-article {
-  display: grid;
-  /* grid-template-columns: 0.3fr 1fr;
-  grid-template-rows: repeat(3, auto); */
   gap: 0;
-  /* grid-template-columns: 8rem auto; */
+
   grid-template-rows: auto auto auto auto;
   grid-auto-rows: auto;
   justify-items: start;
-  align-items: center;
+  align-items: start;
 }
 
 .grid-article :nth-child(1) {
@@ -267,4 +266,15 @@ p,
 }
 .pub {
   display: none;
+}
+.articles {
+  grid-template-areas:
+    "tech tech tech tech"
+    "a1 a1 a1 a1"
+    "a2 a2 a2 a2"
+    "a3 a3 a3 a3"
+    "mode mode mode ."
+    "m1 m1 m1 m1"
+    "m2 m2 m2 m2"
+    "m3 m3 m3 m3";
 }
