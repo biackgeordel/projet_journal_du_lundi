@@ -1,169 +1,9 @@
-/*reset*/
-*,
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 1.6rem;
-}
-/* général */
-:root {
-  font-size: 62.5%;
-}
-body {
-  /* font-family: "roboto", sans-serif; */
-  font-family: "Cormorant Garamond", serif;
-  color: var(--dark);
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Cormorant Garamond", serif;
-}
-h2,
-h3 {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: bold;
-  font-size: 1.8rem;
-}
-h1 {
-  font-size: 4rem;
-}
-img {
-  min-width: 100%;
-  /* max-height: 100%; */
-  object-fit: cover;
-}
-input {
-  outline: none;
-  border: 0;
-  border-bottom: 2px solid var(--dark);
-  background: var(--gray-light);
-}
-
-ul {
-  list-style: none;
-}
-p {
-  margin: 0 0.2rem;
-}
-::placeholder {
-  color: var(--dark);
-  font-weight: 700;
-  word-spacing: 0.5rem;
-}
-
-header {
-  line-height: 3.5rem;
-  min-width: 100%;
-}
-a {
-  font-size: 1.6rem;
-  text-decoration: none;
-  color: var(--dark);
-}
-article {
-  margin: 1.5rem 0;
-}
-form {
-  line-height: 2.5rem;
-}
-/* variables */
-:root {
-  --primary: #be2529;
-  --dark: #333;
-  --secondary: #0d0d0d;
-  --gray: #ddd;
-  --gray-light: #eee;
-  --gray-hint: #555;
-}
 /*utilitaire*/
 .container {
-  min-width: 100px;
+  min-width: 100%;
   margin: 0;
   height: 100vh;
   padding: 0;
-}
-/* aniamtion de la barre de navigation*/
-.anime_menu::after {
-  content: "";
-  width: 100%;
-  display: block;
-  transform: scale(0);
-  transform-origin: right center;
-  height: 5px;
-  background: var(--primary);
-  transition: transform 0.3s ease-in 0.2s;
-  border-radius: 10px;
-}
-.anime_menu:hover::after {
-  transform: scale(1);
-  transform-origin: left center;
-}
-
-.text-primary {
-  color: var(--primary);
-}
-.text-primary:hover {
-  opacity: 0.8;
-}
-.btn-dark {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 0;
-  background: var(--dark);
-
-  color: var(--gray-light);
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-}
-.btn-dark:hover {
-  background: #fff;
-  color: var(--dark);
-}
-.btn {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 0;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s;
-  border: 1px solid var(--dark);
-}
-.btn-light {
-  background: white;
-  border: 1px solid var(--primary);
-  color: var(--primary);
-}
-.btn-light:hover {
-  background: var(--primary);
-  color: #fff;
-}
-.underline {
-  border-bottom: 2px solid var(--gray-light);
-  padding: 1rem 0;
-}
-.barre_color {
-  border: 0;
-  border-bottom: 1px solid var(--gray-light);
-}
-.author {
-  font-weight: 700;
-  color: var(--secondary);
-  font-size: 1.3rem;
-}
-.date_article {
-  color: var(--gray-hint);
-  font-size: 1.3rem;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
-}
-.mx {
-  margin: 0 0.5rem;
 }
 
 .nav_header {
@@ -179,10 +19,7 @@ form {
   grid-row: 2/3;
   place-self: center center;
 }
-.nav_header .logo {
-  font-size: 3rem;
-  font-family: "Staatliches", cursive;
-}
+
 .nav_header ul {
   grid-row: 3/5;
   display: flex;
@@ -237,7 +74,6 @@ p,
 
 .grid-article {
   gap: 0;
-
   grid-template-rows: auto auto auto auto;
   grid-auto-rows: auto;
   justify-items: start;
@@ -264,8 +100,30 @@ p,
   grid-column: 2/1 span;
   grid-row: 4/5;
 }
-.pub {
+.pub > img {
   display: none;
+}
+.pub {
+  grid-template-areas:
+    ". . . ."
+    "h1 h1 h1 h1"
+    "p p p p"
+    "form form form form"
+    ". . . .";
+}
+.pub form {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pub form input {
+  min-width: 50%;
+}
+.pub h1,
+.pub p {
+  text-align: center;
+}
+.pub p {
+  padding: 1rem 0;
 }
 .articles {
   grid-template-areas:
@@ -273,7 +131,7 @@ p,
     "a1 a1 a1 a1"
     "a2 a2 a2 a2"
     "a3 a3 a3 a3"
-    "mode mode mode ."
+    "mode mode mode mode"
     "m1 m1 m1 m1"
     "m2 m2 m2 m2"
     "m3 m3 m3 m3";
