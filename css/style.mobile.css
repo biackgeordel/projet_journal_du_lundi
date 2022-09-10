@@ -5,6 +5,9 @@
   height: 100vh;
   padding: 0;
 }
+header {
+  margin: 0;
+}
 
 .nav_header {
   display: grid;
@@ -135,4 +138,7 @@ p,
     "m1 m1 m1 m1"
     "m2 m2 m2 m2"
     "m3 m3 m3 m3";
+}
+.btn-anime {
+  display: block;
 }

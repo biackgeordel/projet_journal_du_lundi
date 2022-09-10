@@ -5,26 +5,31 @@
 .anime_menu {
   display: none;
 }
-.navigation_theme::before {
-  content: "\009F\009F\009F";
-  display: block;
-  font-size: 2.4rem;
-  align-self: flex-end;
+.btn-anime {
+  /* align-self: flex-end; */
   margin: 0.5rem 1rem;
+  min-width: 0.5rem;
+  text-align: center;
+}
+header {
+  margin: 0;
+}
+.btn-anime::before {
+  content: "  Articles +";
+  display: block;
+  font-size: 2rem;
+  padding: 0.5rem;
   text-align: center;
   font-weight: 700;
-  transform: rotate(-90deg);
   transition: transform 1s ease-in-out;
-  transform-origin: center center;
-  min-width: 4rem;
-  min-height: 4rem;
-  padding: 1rem;
+  transform-origin: center;
   color: var(--gray-hint);
+}
+
+.navigation_theme:hover .btn-anime::before {
+  color: var(--secondary);
 }
 .navigation_theme:hover .anime_menu {
   display: block;
-  padding: 0.5rem 0;
-}
-.navigation_theme:hover::before {
-  transform: rotate(90deg);
+  padding: 0.5rem;
 }
